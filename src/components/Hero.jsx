@@ -266,7 +266,7 @@ function Hero() {
           {[
             { num: "2+", label: "Internships" },
             { num: "10+", label: "Projects Built" },
-            { num: "6+", label: "Certifications" },
+            { num: "20+", label: "Certifications" },
             { num: "2027", label: "Expected Grad." },
           ].map(({ num, label }, i) => (
             <div

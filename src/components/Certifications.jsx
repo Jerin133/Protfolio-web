@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { SiGoogledrive } from "react-icons/si";
 
 const certificates = [
   {
@@ -68,6 +69,12 @@ const certificates = [
     logo: "/logos/eagle.jpg",
     pdf: "/certificates/EagleHiTech Certificate.pdf",
   },
+  {
+    title: "HackerRank Orchestrate August-26",
+    issuer: "HackerRank",
+    logo: "/logos/hackerrank.png",
+    pdf: "/certificates/Hackerrank Orchestrate August 26.pdf",
+  },
 ];
 
 function Certifications() {
@@ -82,7 +89,56 @@ function Certifications() {
           style={{ marginBottom: "3.5rem" }}
         >
           <p className="section-label">Credentials</p>
-          <h2 className="section-heading">Certifications</h2>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: "1rem",
+            }}
+          >
+            <h2 className="section-heading" style={{ margin: 0 }}>Certifications</h2>
+            <a
+              href="https://drive.google.com/drive/folders/1Y3GDT1A2YSOa671NRcUzY3sJVD1QroGI"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                fontSize: "0.85rem",
+                fontWeight: 600,
+                color: "#1a73e8",
+                textDecoration: "none",
+                padding: "0.55rem 1.1rem",
+                borderRadius: "8px",
+                border: "1.5px solid rgba(26,115,232,0.3)",
+                background: "linear-gradient(135deg, #e8f0fe 0%, #f0f4ff 100%)",
+                transition: "all 0.25s ease",
+                boxShadow: "0 1px 4px rgba(26,115,232,0.1)",
+                whiteSpace: "nowrap",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "linear-gradient(135deg, #1a73e8 0%, #4285f4 100%)";
+                e.currentTarget.style.color = "#fff";
+                e.currentTarget.style.borderColor = "#1a73e8";
+                e.currentTarget.style.boxShadow = "0 4px 12px rgba(26,115,232,0.35)";
+                e.currentTarget.style.transform = "translateY(-1px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "linear-gradient(135deg, #e8f0fe 0%, #f0f4ff 100%)";
+                e.currentTarget.style.color = "#1a73e8";
+                e.currentTarget.style.borderColor = "rgba(26,115,232,0.3)";
+                e.currentTarget.style.boxShadow = "0 1px 4px rgba(26,115,232,0.1)";
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              <SiGoogledrive style={{ fontSize: "1rem" }} />
+              View All
+              <HiOutlineExternalLink style={{ fontSize: "0.85rem" }} />
+            </a>
+          </div>
         </motion.div>
 
         <div
