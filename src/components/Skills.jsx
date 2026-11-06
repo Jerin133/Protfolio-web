@@ -6,10 +6,10 @@ const skills = {
   Languages: ["Java", "Python", "SQL", "C", "C++"],
   "Web Technologies": ["React.js", "HTML", "CSS", "Tailwind CSS", "Node.js", "Express.js"],
   "Data Science": ["NumPy", "Pandas", "Matplotlib", "Seaborn"],
-  Database: ["MongoDB", "MySQL", "Supabase"],
+  Database: ["MongoDB", "MySQL", "Supabase", "SQL Lite"],
   "Core CS": ["Data Structures", "Algorithms", "OS Basics", "Networking Basics", "DBMS"],
-  "Cloud & AI": ["AWS", "Ollama"],
-  Tools: ["Git", "GitHub", "VS Code", "Postman", "Figma", "Jira", "Vercel", "Render"],
+  "Cloud & AI": ["AWS", "Ollama", "Google Cloud"],
+  Tools: ["Git", "GitHub", "VS Code", "Postman", "Figma", "Jira", "Vercel", "Render", "Canva"],
 };
 
 const categoryIcons = {
